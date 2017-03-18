@@ -1,0 +1,17 @@
+mkdir GIT
+cd GIT/
+
+git clone https://github.com/GEARS-SENAI/GEARS.git
+
+git add*
+git commit
+
+git commit -u "<comentario>"
+
+git config --global user.name "GEARS-SENAI
+git config --global user.email gears.senai.sp@gmail.com
+
+git remote set-url origin https://github.com/GEARS-SENAI/GEARS.git
+git push -u origin https://github.com/GEARS-SENAI/GEARS.git
+
+git push origin master
