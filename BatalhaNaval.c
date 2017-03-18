@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
-    char inimigo[5][10] =  {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+system ("clear");
+    char inimigo[5][10] = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
                            {0, 1, 1, 1, 1, 0, 0, 1, 0, 1},
                            {0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
                            {1, 0, 0, 0, 0, 0, 0, 1, 0, 0},
@@ -9,9 +10,9 @@ int main(){
     char tabuleiro[5][10];
     int i, j;
     
-    for(i=0; i<5; i++){
-             for(j=0; j<10; j++){
-                      tabuleiro[i][j] = '.';
+    for(i=1; i<5; i++){
+             for(j=1; j<11; j++){
+                      tabuleiro[i][j] = '+';
                       printf("%c", tabuleiro[i][j]);
              }
              printf("\n");

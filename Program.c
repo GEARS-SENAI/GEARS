@@ -21,7 +21,6 @@ int main(void)
 system("clear");
     int tabuleiro[DIM][DIM],
         continuar;
- 
     do
     {
         vez=1;
@@ -39,8 +38,8 @@ int menu(void)
     int opcao;
  
         printf("\t\t\tGEARS - SENAI SP\n");
-        printf("\n1.Jogar\n");
-        printf("0.Sair\n");
+        printf("\n1) Jogar\n");
+        printf("0) Sair\n");
         printf("\nOpcao: ");
  
         scanf("%d", &opcao);
@@ -81,18 +80,18 @@ void exibeTabuleiro(int tabuleiro[][DIM])
 {
     int linha, coluna;
     putchar('\n');
- 
+    system("clear"); 
     for(linha = 0 ; linha < DIM ; linha++)
     {
         for(coluna = 0 ; coluna < DIM ; coluna++)
         {
             if(tabuleiro[linha][coluna] == 0)
-                printf("    ");
+		printf("\t   ");
             else
                 if(tabuleiro[linha][coluna] == 1)
-                    printf("  X ");
+                    printf("\t X ");
                 else
-                    printf("  O ");
+                    printf("\t O ");
  
             if(coluna != (DIM-1))
                 printf("|");
